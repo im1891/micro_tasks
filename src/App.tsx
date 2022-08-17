@@ -1,19 +1,28 @@
 import React from 'react';
 
 import './App.css';
-import {CarType, TopCars} from "./tasks/task01/TopCars";
+import {Button} from "./tasks/task02(button)/Button";
 
-const topCars: Array<CarType> = [
-    {manufacturer: 'BMW', model: 'm5cs'},
-    {manufacturer: 'Mercedes', model: 'e63s'},
-    {manufacturer: 'Audi', model: 'rs6'}
-]
 
 function App() {
 
+    const foo1 = (name: string, age: number, address: string) => {
+        console.log(`Hello, I\'m ${name}, my age ${age}, from ${address}`);
+    }
+    const foo2 = (name: string, age: number, address: string) => {
+        console.log(`Hello, I\'m ${name}, my age ${age}, from ${address}`);
+    }
+
+    const foo3 = () => {
+        console.log('Hello, I\'m stupid button');
+    }
+
+
     return (
         <div className="App">
-            <TopCars cars={topCars}/>
+            <Button title='Кнопка-1' callBack={() => foo1('Vasya', 21, 'Minsk')}/>
+            <Button title='Кнопка-2' callBack={() => foo2('Petya', 32, 'Kiev')}/>
+            <Button title='Stupid button' callBack={foo3}/>
         </div>
     );
 }

@@ -67,7 +67,7 @@ function App() {
     }
     return (
         <div>
-            <NewComponent currentMoney={currentMoney} callBack1={onclickFilterHandler}/>
+            <NewComponent currentMoney={currentMoney} callBack={onclickFilterHandler}/>
         </div>
     )
 }

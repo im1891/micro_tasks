@@ -10,7 +10,7 @@ export type MoneyType = {
 
 type PropsType = {
     currentMoney: MoneyType[],
-    callBack1: (nameButton: FilterType) => void,
+    callBack: (nameButton: FilterType) => void,
 }
 
 
@@ -29,9 +29,9 @@ export const NewComponent = (props: PropsType) => {
                     <span>{cash.banknots}</span><span>{cash.value}</span><span>{cash.number}</span></li>)}
             </ul>
 
-            <button onClick={() => props.callBack1('All')}>all</button>
-            <button onClick={() => props.callBack1('Rubl')}>rubles</button>
-            <button onClick={() => props.callBack1('Dollar')}>dollars</button>
+            <button onClick={() => props.callBack('All')}>all</button>
+            <button onClick={() => props.callBack('Rubl')}>rubles</button>
+            <button onClick={() => props.callBack('Dollar')}>dollars</button>
 
             {/*  <button onClick={(event: any) => onClickFilterHandler(event.target.innerHTML)}>All</button>
             <button onClick={(event: any) => onClickFilterHandler(event.target.innerHTML)}>Dollars</button>

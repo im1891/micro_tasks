@@ -21,10 +21,7 @@ export const NewComponent = (props: PropsType) => {
 
 
             <ul>
-                {/*
-                {cash.map((cashElement: any) => <li>
-                    <span>{cashElement.banknots}</span><span>{cashElement.value}</span><span>{cashElement.number}</span>
-                </li>)}*/}
+
                 {props.currentMoney.map((cash, i) => <li key={i}>
                     <span>{cash.banknots}</span><span>{cash.value}</span><span>{cash.number}</span></li>)}
             </ul>
@@ -33,10 +30,7 @@ export const NewComponent = (props: PropsType) => {
             <button onClick={() => props.callBack('Rubl')}>rubles</button>
             <button onClick={() => props.callBack('Dollar')}>dollars</button>
 
-            {/*  <button onClick={(event: any) => onClickFilterHandler(event.target.innerHTML)}>All</button>
-            <button onClick={(event: any) => onClickFilterHandler(event.target.innerHTML)}>Dollars</button>
-            <button onClick={(event: any) => onClickFilterHandler(event.target.innerHTML)}>Rubls</button>
-*/}
+
         </div>
     )
 }

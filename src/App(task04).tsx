@@ -3,7 +3,7 @@ import './App.css';
 import {FilterType, MoneyType, NewComponent} from "./tasks/task04/NewComponent";
 
 
-function App() {
+function AppTask04() {
 
 
     const [money, setMoney] = useState<Array<MoneyType>>([
@@ -24,7 +24,7 @@ function App() {
         currentMoney = money.filter(filteredMoney => filteredMoney.banknots === 'Dollars');
     }
     if (filter === 'Rubl') {
-        currentMoney = money.filter(filteredMoney => filteredMoney.banknots === 'RUBLS');
+      currentMoney = money.filter(filteredMoney => filteredMoney.banknots === 'RUBLS');
     }
 
     let onclickFilterHandler = (nameButton: FilterType) => {
@@ -39,4 +39,4 @@ function App() {
     )
 }
 
-export default App;
+export default AppTask04;

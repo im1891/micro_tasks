@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AppTask05 from "./App(task05)";
+import AppTask06 from "./App(task06)";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,7 +10,8 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     {/*<AppTask04 />*/}
-      <AppTask05 />
+    {/*  <AppTask05 />*/}
+    <AppTask06/>
   </React.StrictMode>
 );
 
